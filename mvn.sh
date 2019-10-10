@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 
 MESSAGE="$(git log --format=%B -n 1)"
 
-if [ $string ?? '[MAJOR]' ]; then
+if [[ $MESSAGE =~ '[MAJOR]' ]]; then
   echo "It's there!"
 fi
