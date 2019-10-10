@@ -11,5 +11,5 @@ else
 	  mvn build-helper:parse-version versions:set -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion}
 fi
 
-git commmit -am "Incrementing pom.xml version"
+git commit -m "Incrementing pom.xml version"
 git push -u origin master
